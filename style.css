@@ -1,0 +1,154 @@
+body{
+    background-color: chocolate;
+    font-family:'Satisfy',cursive;
+}
+
+h1{
+    text-align: center;
+    width:55%;
+    height:150px;
+    background-color: white;
+    border:1px solid yellow;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/images/yuyutitleimage.jpeg');
+    z-index:2;
+    color:yellow;
+    font-size:60px;
+
+}
+
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto;
+    height:50%;
+    align-content: space-between;
+    
+}
+
+.fast-foods{
+    background-image: url('/images/fastfoodbgimage.jpg');
+    opacity:0.5;
+    background-repeat: no-repeat;
+    width:100%;
+    color:white;
+    height:100%;
+}
+
+.dessert{
+    background-image: url('/images/desertbgimag.avif');
+    background-repeat: no-repeat;
+    opacity:0.5;
+    color:white;
+    width:100%;
+    height:90%;
+}
+
+.non-alcoholic{
+    background-image: url('/images/non-alcoholicbgimage.avif');
+    background-repeat: no-repeat;
+    opacity:0.5;
+    color:white;
+    width:100%;
+}
+
+.alcohol{
+    background-image: url('/images/alcoholic-drinks.avif');
+    background-repeat: no-repeat;
+    opacity:0.6;
+    color:white;
+    width:100%;
+}
+
+.grid-item{
+    width:50%;
+    border:3px solid mintcream;
+    height:400px;
+    outline:1px solid #000000;
+    padding:3px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    margin:30px;
+    
+}
+
+.healthy-foods{
+    width:50%;
+    height:350px;
+    border:3px groove goldenrod;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.health-corner{
+    background-image: url('/images/healthycornerbgimage.avif');
+    color:white;
+    opacity:0.5;
+    background-repeat: repeat;
+    width:100%;
+}
+
+.end-message{
+    text-align: center;
+    font-variant: small-caps;
+    color:yellow;
+    border:2px dotted lime;
+    width:60%;
+    margin:auto;
+}
+
+h2{
+    color:yellow;
+}
+
+@media only screen and (max-width: 768px){
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto;
+        height:20%;
+        
+    } 
+  .grid-item{
+    width:80%;
+    height:430px;
+    padding:3px;
+    margin:auto;
+    text-align:center;
+    margin-bottom: 10px;
+  }
+
+  h1{
+    width:100%;
+    font-size: 80px;
+  }
+
+  .fast-foods,.alcohol,.dessert,.non-alcoholic,.health-corner{
+   width:100%; 
+   height:80%;
+  }
+
+  .end-message{
+    width:100%;
+  }
+} 
+
+@media only screen and (max-width:600px){
+    .healthy-foods{
+        width:100%;
+    }
+    h1{
+        font-size:50px;
+    }
+}
+
+
+
+
+
+
+
+
+
